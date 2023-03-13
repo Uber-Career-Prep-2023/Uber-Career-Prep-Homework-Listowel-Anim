@@ -30,5 +30,6 @@ int main(){
   cout<<MaxMeanSubArray(numbers,3)<<"\n";//subarray of size 3
   cout<<MaxMeanSubArray(numbers_,2)<<"\n";//edgecase of an empty array
   cout<<MaxMeanSubArray(numbers,0)<<"\n";//edgecase using a subarray size of 0
+  return 0;
   
 }
