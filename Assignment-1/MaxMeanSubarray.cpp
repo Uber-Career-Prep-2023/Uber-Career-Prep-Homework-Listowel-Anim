@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-//Sliding window two pointer technique
+//Fixed size sliding window two pointer technique
 //Time complexity : O(n)
 //Space complexity: O(n)
 
