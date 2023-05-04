@@ -4,6 +4,7 @@
 //Time Complexity: O(n)
 //Space Complexity: O(n)
 //Time Spent: 18 minutes
+//Method used: Depth first search traversal. Pre-order
 using namespace std;
 
 struct Node {
