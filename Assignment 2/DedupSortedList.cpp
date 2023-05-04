@@ -1,6 +1,8 @@
 //Time Complexity: O(n)
 //Space Complexity: O(1)
 //Time Spent on Problem: 12 minutes
+//Two pointer Technique Used: Linked list fast-slow two-pointer
+
 #include <iostream>
 
 using namespace std;
