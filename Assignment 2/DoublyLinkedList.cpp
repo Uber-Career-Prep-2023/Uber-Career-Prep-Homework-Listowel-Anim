@@ -126,4 +126,18 @@ Node* reverseRecursive(Node* head) {
     head->next = NULL;
     return newHead;
 }
-
+int main() {
+    Node* head = NULL;
+    head = insertAtFront(head, 5);
+    insertAtBack(head, 10);
+    Node* loc = head->next;
+    insertAfter(head, 15, loc);
+    cout << "Length of list: " << length(head) << endl;
+    head = deleteFront(head);
+    deleteBack(head);
+    head = deleteNode(head, loc);
+    cout << "Length of list: " << length(head) << endl;
+    head = reverseIterative(head);
+    head = reverseRecursive(head);
+    return 0;
+}
