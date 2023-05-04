@@ -2,6 +2,8 @@
 //TIme Complexity: O(n)
 //Space Complexity: O(1)
 //Time Spent: 19 minutes
+//Two Pointer Technique Used: Linked list fast-slow two-pointer
+
 using namespace std;
 
 struct ListNode {
