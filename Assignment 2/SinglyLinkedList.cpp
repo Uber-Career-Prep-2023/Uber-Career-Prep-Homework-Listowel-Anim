@@ -5,6 +5,7 @@ struct Node {
     Node *next;
 };
 
+//Time Complexity: O(1)
 Node* insertAtFront(Node *head, int val) {
     Node *newNode = new Node;
     newNode->val = val;
@@ -12,6 +13,7 @@ Node* insertAtFront(Node *head, int val) {
     return newNode;
 }
 
+//Time Complexity: O(n)
 void insertAtBack(Node *head, int val) {
     Node *newNode = new Node;
     newNode->val = val;
@@ -22,6 +24,7 @@ void insertAtBack(Node *head, int val) {
     head->next = newNode;
 }
 
+// Time Complexity: O(1)
 void insertAfter(Node *head, int val, Node *loc) {
     Node *newNode = new Node;
     newNode->val = val;
@@ -29,12 +32,14 @@ void insertAfter(Node *head, int val, Node *loc) {
     loc->next = newNode;
 }
 
+//Time Complexity: O(1)
 Node* deleteFront(Node *head) {
     Node *newHead = head->next;
     delete head;
     return newHead;
 }
 
+//Time COmplexity: O(n)
 void deleteBack(Node *head) {
     while (head->next->next != nullptr) {
         head = head->next;
@@ -43,6 +48,7 @@ void deleteBack(Node *head) {
     head->next = nullptr;
 }
 
+//Time Complexity: O(n)
 Node* deleteNode(Node *head, Node *loc) {
     if (head == loc) {
         return deleteFront(head);
@@ -56,6 +62,7 @@ Node* deleteNode(Node *head, Node *loc) {
     return head;
 }
 
+//Time Complexity: O(n)
 int length(Node *head) {
     int len = 0;
     while (head != nullptr) {
@@ -65,6 +72,7 @@ int length(Node *head) {
     return len;
 }
 
+//TIme Complexity: O(n)
 Node* reverseIterative(Node *head) {
     Node *prev = nullptr;
     Node *curr = head;
@@ -77,6 +85,7 @@ Node* reverseIterative(Node *head) {
     return prev;
 }
 
+//Time Complexity: O(n)
 Node* reverseRecursiveHelper(Node *prev, Node *curr) {
     if (curr == nullptr) {
         return prev;
