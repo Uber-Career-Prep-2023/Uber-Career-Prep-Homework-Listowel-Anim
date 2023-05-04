@@ -1,6 +1,7 @@
 //Time complexity: O(n) 
 //Space complexity: O(n) 
 //Methods used: Breadth first tree traversal (Insert method) and Depth first traversal (Copy Recursive Method)
+//Time Spent: 31 minutes. 
 #include <iostream>
 #include <unordered_map>
 
