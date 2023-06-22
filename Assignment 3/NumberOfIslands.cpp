@@ -2,6 +2,7 @@
 //Time spent on problem : 32 mins
 //Space Complexity: O(1)
 //Time Complexity: O(m*n)
+// Used DFS algorithm
 
 using namespace std;
 
